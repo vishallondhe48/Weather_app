@@ -3,3 +3,60 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	background-image: linear-gradient(to right, #68da80, #02f5e5);
+}
+.title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 5em;
+	text-align: center;
+	margin-top: 10vh;
+	color: white;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* search parameters */
+.container .searchBox {
+	margin-top: 10vh;
+	font-family: 'Poppins', sans-serif;
+}
+.searchBox input {
+	background: rgba(0, 0, 0, 0.45);
+	border: none;
+	border-radius: 22px;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 10px 2px;
+}
+.searchBox .search {
+	margin-left: 0.5rem;
+	background: transparent;
+	font-size: 1rem;
+	border: none;
+	cursor: pointer;
+}
+.search img {
+	width: 20px;
+}
+
+/*  results*/
+.result {
+	margin-top: 4vh;
+	font-family: 'Poppins', sans-serif;
+	border: none;
+	display: none;
+	font-size: 1.2rem;
+}
+.result .name {
+	font-size: 3rem;
+}
+.result .icon {
+	width: 12vh;
+	height: 12vh;
+}

@@ -1,18 +1,17 @@
-const button = document.querySelector('.button');
+const button = document.querySelector('.search');
 const inputValue = document.querySelector('.inputValue');
 const name = document.querySelector('.name');
 const desc = document.querySelector('.desc');
 const temp = document.querySelector('.temp');
 const icon = document.querySelector('.icon');
-// e208c7debc1bec5fd59ed37ae6308f61 api key
-// https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
+const result = document.querySelector('.result');
 
 button.addEventListener('click', searchResult);
 function searchResult() {
 	fetch(
 		'http://api.openweathermap.org/data/2.5/weather?q=' +
 			inputValue.value +
-			'&appid=e208c7debc1bec5fd59ed37ae6308f61'
+			'&units=metric&appid=e208c7debc1bec5fd59ed37ae6308f61'
 	)
 		.then((response) => response.json())
 		.then((data) => {
@@ -21,8 +20,9 @@ function searchResult() {
 			var tempIcon = data['weather'][0]['icon'];
 			var descValue = data['weather'][0]['description'];
 
+			result.style.display = 'block';
 			name.innerHTML = nameValue;
-			temp.innerHTML = tempValue;
+			temp.innerHTML = tempValue + ' &#8451';
 			desc.innerHTML = descValue;
 			icon.src = 'http://openweathermap.org/img/wn/' + tempIcon + '.png';
 		})

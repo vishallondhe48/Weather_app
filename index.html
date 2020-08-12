@@ -5,27 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
 <body>
-
-    <h1>Weather app</h1>
-    <!-- icon for searching the weather forecast  <i class="fas fa-greater-than"></i> -->
+    <h1 class="title">Weather app</h1>
     <div class="container">
         <div class="searchBox">
-            <input type="text" class="inputValue">
-            <input type="submit" value="Submit" class="button">
+            <input type="text" class="inputValue" placeholder="Enter city's name">
+            <button type="submit" class="search"><img src="./icons/search.svg" alt=""></button>
         </div>
+        <div class="result">
+            <h1 class="name"></h1>
+            <p><img src="" class="icon"></p>
+            <p class="desc"></p>
+            <p class="temp"></p>
+        </div>
+
     </div>
 
-    <div class="display">
-        <h1 class="name"></h1>
-        <p class="desc"></p>
-        <p><img src="" class="icon"></p>
-        <p class="temp"></p>
-    </div>
+
+
 
 
     <script src="./app.js"></script>
