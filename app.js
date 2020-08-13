@@ -6,6 +6,7 @@ const temp = document.querySelector('.temp');
 const icon = document.querySelector('.icon');
 const result = document.querySelector('.result');
 
+inputValue.focus();
 button.addEventListener('click', searchResult);
 function searchResult() {
 	fetch(
@@ -21,10 +22,13 @@ function searchResult() {
 			var descValue = data['weather'][0]['description'];
 
 			result.style.display = 'block';
+			inputValue.value = '';
 			name.innerHTML = nameValue;
 			temp.innerHTML = tempValue + ' &#8451';
 			desc.innerHTML = descValue;
 			icon.src = 'http://openweathermap.org/img/wn/' + tempIcon + '.png';
 		})
 		.catch((err) => alert('Wrong city Name!'));
+
+	inputValue.focus();
 }
