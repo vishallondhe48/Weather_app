@@ -44,7 +44,14 @@ body {
 .search img {
 	width: 20px;
 }
-
+::placeholder {
+	color: black;
+	opacity: 1;
+}
+.inputValue:focus {
+	border: none;
+	outline: none;
+}
 /*  results*/
 .result {
 	margin-top: 4vh;
