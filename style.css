@@ -41,8 +41,14 @@ body {
 	border: none;
 	cursor: pointer;
 }
-.search img {
-	width: 20px;
+.search {
+	outline: none;
+}
+.search i {
+	color: white;
+}
+.search i:hover {
+	color: rgb(0, 132, 255);
 }
 ::placeholder {
 	color: black;
