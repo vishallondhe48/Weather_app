@@ -10,7 +10,7 @@ inputValue.focus();
 button.addEventListener('click', searchResult);
 function searchResult() {
 	fetch(
-		'http://api.openweathermap.org/data/2.5/weather?q=' +
+		'https://api.openweathermap.org/data/2.5/weather?q=' +
 			inputValue.value +
 			'&units=metric&appid=e208c7debc1bec5fd59ed37ae6308f61'
 	)
