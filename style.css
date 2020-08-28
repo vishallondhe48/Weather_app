@@ -29,7 +29,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 .searchBox input {
-	background: rgba(0, 0, 0, 0.45);
+	background: rgba(255, 255, 255);
 	border: none;
 	border-radius: 22px;
 	font-size: 1.5rem;
@@ -54,7 +54,7 @@ body {
 }
 ::placeholder {
 	color: black;
-	opacity: 1;
+	opacity: 0.5;
 }
 .inputValue:focus {
 	border: none;
