@@ -27,6 +27,7 @@ function searchResult() {
 			temp.innerHTML = tempValue + ' &#8451';
 			desc.innerHTML = descValue;
 			icon.src = `./icons/${tempIcon}.png`;
+			// icon.src = 'http://openweathermap.org/img/wn/' + tempIcon + '@4x.png';
 		})
 		.catch((err) => alert('Wrong city Name!'));
 
